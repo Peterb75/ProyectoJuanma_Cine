@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cinemaster</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-section">
+            <div class="placeholder-image">
+                <!-- Aquí puedes agregar tu imagen de fondo -->
+                Imagen
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <div class="play-icon"></div>
+                </div>
+            </div>
+            <h1 class="brand-name">CINEMASTER</h1>
+            
+            <form class="login-form" id="loginForm" method="POST" action="../php/procesologin.php">
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Ingresar Correo" required>
+                    <span id="error-email" class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <span id="error-password" class="error-message" style="color: red;"></span>
+                </div>
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+                
+                <div class="register-link">
+                    <span>¿No tienes cuenta?</span>
+                    <a href="registro.html">Registrarte</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

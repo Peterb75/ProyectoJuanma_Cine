@@ -1,0 +1,247 @@
+/* Estilos para el contenedor de búsqueda */
+.search-container {
+    position: relative; /* Permite posicionar los resultados relativamente */
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+/* Estilos para el campo de búsqueda */
+.search-box {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    color: white;
+}
+
+/* Estilos para el contenedor de resultados */
+.search-results {
+    position: absolute;
+    top: 100%; /* Coloca los resultados justo debajo del campo de búsqueda */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000; /* Asegura que los resultados estén por encima de otros elementos */
+    max-height: 300px; /* Altura máxima para el contenedor de resultados */
+    overflow-y: auto; /* Permite el desplazamiento si hay muchos resultados */
+    display: none;
+}
+
+/* Estilos para cada tarjeta de película */
+.movie-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 184, 0, 0.2);
+}
+
+.movie-card:last-child {
+    border-bottom: none; /* Elimina el borde inferior del último elemento */
+}
+
+.movie-card img {
+    width: 50px;
+    height: 75px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.movie-card h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #FFB800;
+}
+
+.movie-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0A0B17;
+    color: #FFB800;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FFB800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-icon {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #FFB800;
+    border-bottom: 8px solid transparent;
+    margin-left: 4px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFB800;
+}
+
+.search-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    color: white;
+}
+
+.search-box::placeholder {
+    color: #666;
+}
+
+nav a {
+    color: #FFB800;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #FFD666;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 184, 0, 0.2);
+    border: 1px solid rgba(255, 184, 0, 0.5);
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.content-row {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.content-card {
+    flex: 0 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 184, 0, 0.2);
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.content-card:hover {
+    border-color: rgba(255, 184, 0, 0.5);
+}
+
+.continue-watching .content-card {
+    width: 256px;
+    height: 144px;
+}
+
+.trending .content-card {
+    width: 192px;
+    height: 192px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #FFB800;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(255, 184, 0, 0.5);
+    border-radius: 4px;
+}
+
+.footer-links a {
+    color: #FFB800;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    color: #FFD666;
+}

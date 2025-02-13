@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Cinemaster</title>
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+    <div class="registro-container">
+        <div class="form-section">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <div class="play-icon"></div>
+                </div>
+            </div>
+            <h1 class="brand-name">CINEMASTER</h1>
+            
+            <form class="registro-form" id="registerForm" method="POST" action="../php/procesoregistro.php">
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Ingresar Correo" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Nombre usuario" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu Contraseña" required>
+                </div>
+                <div class="terms-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="terms" required>
+                        <span class="checkmark"></span>
+                        <span class="terms-text">Términos y condiciones</span>
+                    </label>
+                </div>
+                <a href="login.html"><button type="submit" class="register-button">Registrarse</button></a>
+                <div class="login-link">
+                    <span>¿Ya tienes cuenta? </span>
+                    <a href="login.html">Inicia sesión</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-section">
+            <div class="placeholder-image">
+                <!-- Aquí puedes agregar tu imagen de fondo -->
+                Imagen
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/registro.js"></script>
+</html>
