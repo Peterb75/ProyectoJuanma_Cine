@@ -20,7 +20,7 @@ function searchMovies(query) {
         }
     };
 
-    fetch(`https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1&query=${encodeURIComponent(query)}`, options)
+    fetch(`https://api.themoviedb.org/3/search/movie?include_adult=false&language=es-ES&page=1&query=${encodeURIComponent(query)}`, options)
         .then(res => res.json())
         .then(data => {
             console.log(data); // Verifica la respuesta de la API
